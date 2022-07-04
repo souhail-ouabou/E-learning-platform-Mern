@@ -6,8 +6,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const sendMail = require("./sendMail");
 
-const { google } = require("googleapis");
-const { OAuth2 } = google.auth;
+
 
 const { CLIENT_URL } = process.env;
 
