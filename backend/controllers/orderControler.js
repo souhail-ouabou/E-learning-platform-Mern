@@ -1,5 +1,5 @@
 const Order = require("../models/orderModel");
-const Course = require("../models/CourseModel");
+const Course = require("../models/courseModel");
 
 const coursesCtrl = {
   // @desc Create new order

@@ -90,7 +90,7 @@
 }
 
 .coursecard{
-    width: 252px;
+    width: 100%;
     border: 1px #dfdfdf solid;
 
 }
@@ -111,10 +111,7 @@
 .coursecard h3 {
     width: 230px;
     cursor: pointer;
-    position: absolute;
-    top: 170px;
-    right: 10px;
-    height: 50px;
+
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: normal;
@@ -123,16 +120,12 @@
     -webkit-box-orient: vertical;
 }
 .coursecards h4{
-    position: absolute;
-    top: 230px;
+
         font-size: 16px;
-    left: 10px;
+
 }
 .coursecard h5{
-    position: absolute;
-    top: 260px;
     font-size: 15px;
-        left: 10px;
 
 }
 .coursecards h4{

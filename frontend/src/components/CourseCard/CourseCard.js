@@ -6,7 +6,7 @@ const CourseCard = ({ course }) => {
     return (
         <div className = 'coursecard'>
             <Card
-                style={{ width: 250,marginRight:'10px' }}
+                style={{ width: "100%",marginRight:'10px' }}
                  cover={<img style = {{height : '150px',objectFit : 'cover'}} alt="example" src={course.image} />} 
                 >
                 <h3>

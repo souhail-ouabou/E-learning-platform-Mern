@@ -1,11 +1,14 @@
 const path = require("path");
-require("dotenv").config({ silent: process.env.NODE_ENV === "production" });
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const fileUpoad = require("express-fileupload");
+
+require('dotenv').config()
+
 const app = express();
+
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
@@ -27,6 +30,7 @@ app.use((err, req, res, next) => {
     },
   });
 });
+
 __dirname = path.resolve();
 console.log(__dirname);
 if (process.env.NODE_ENV === "production") {
@@ -42,9 +46,7 @@ if (process.env.NODE_ENV === "production") {
 
 const PORT = process.env.PORT || 4000;
 
-const CONNECTION_URL =
-  "mongodb+srv://souhail:souhail2001@cluster0.bnzut.mongodb.net/myDataBase?retryWrites=true&w=majority";
-
+const CONNECTION_URL = process.env.MONGODB_URL
 mongoose
   .connect(CONNECTION_URL, {
     useNewUrlParser: true,

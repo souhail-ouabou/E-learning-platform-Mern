@@ -1,4 +1,4 @@
-const Courses = require("../models/CourseModel");
+const Courses = require("../models/courseModel");
 const { rawListeners } = require("../models/userModel");
 const User = require("../models/userModel");
 

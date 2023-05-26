@@ -66,11 +66,6 @@
   color: black !important;
 }
 
-.coursecards {
-  width: 100%;
-  padding: 10px;
-}
-
 .TabContent {
   padding: 10px 20px;
 }
@@ -328,7 +323,7 @@
   }
 
   .coursecards {
-    width: 100%;
+    width: 90%;
     padding: 0px;
   }
 
